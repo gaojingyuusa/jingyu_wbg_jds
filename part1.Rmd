@@ -148,9 +148,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Figure 1: Global Sanitation by Region Over Time
 
-wld_reg_dvlp <- ggplot(wld_dvlp, aes(x=year,y=sani_value,color=name)) + geom_line(size=1.5) +style + scale_color_manual(name="Region",labels=c("EAP","ECA","LAC","MENA","SA","SSA","World"),values=c("#002244","#00A996","#006068","grey","#98252B","#EB1C2D","#009FDA")) + labs(title="Figure 1. Access to Improved Sanitation Facilities",subtitle="(% of population using improved sanitation facilities)",x="Year",y=NULL, caption="Note: High income countries in these regions and North America are excluded.") + theme(legend.position="right") + annotate("text", x=1992, y=40, label="South Asia and Sub-Sahara Africa \nhave long lagged behind.", hjust=0)
+  wld_reg_dvlp <- ggplot(wld_dvlp, aes(x=year,y=sani_value,color=name)) + geom_line(size=1.5) +style + scale_color_manual(name="Region",labels=c("EAP","ECA","LAC","MENA","SA","SSA","World"),values=c("#002244","#00A996","#006068","grey","#98252B","#EB1C2D","#009FDA")) + labs(title="Figure 1. Access to Improved Sanitation Facilities",subtitle="(% of population using improved sanitation facilities)",x="Year",y=NULL, caption="Note: High income countries in these regions and North America are excluded.") + theme(legend.position="right") + annotate("text", x=1992, y=40, label="South Asia and Sub-Sahara Africa \nhave long lagged behind.", hjust=0)
 
-wld_reg_dvlp
+  wld_reg_dvlp
 
 ```
 
@@ -207,7 +207,7 @@ wld_reg_dvlp
 
 ```{r message=FALSE, echo=FALSE, warning =FALSE, fig.align="center"}
 
-# Figure 2: Global Sanitation by Income Group 1990 and 2015 (Scatterplot)
+# Figure 3: Global Sanitation by Income Group 1990 and 2015 (Scatterplot)
 
   # Retrieve GNI per capita (NY.GNP.PCAP.CD) used by WBG to define income group
   gnipc <- data.frame()  
